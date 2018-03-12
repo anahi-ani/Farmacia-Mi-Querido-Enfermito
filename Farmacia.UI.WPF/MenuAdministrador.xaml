@@ -1,0 +1,57 @@
+﻿<Window x:Class="Farmacia.UI.WPF.MenuAdministrador"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Farmacia.UI.WPF"
+        mc:Ignorable="d"
+        Title="MenuAdministrador" Height="380.329" Width="300">
+    <StackPanel>
+        <Image Source="Images/logo.png" Height="100"/>
+        <Button x:Name="btmCategorias" Click="btmCategorias_Click" Height="30" Width="150" Margin="5">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Images/NCategoria.png" Height="20"/>
+                <Label Content="Catálogo Categorías" Height="28" Width="120" HorizontalContentAlignment="Center"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="btmCliente" Click="btmCliente_Click" Height="30" Width="150" Margin="5">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Images/NEmpleado.png" Height="20"/>
+                <Label Content="Nuevo Cliente" Height="28" Width="120" HorizontalContentAlignment="Center"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="btmEmpleado" Click="btmEmpleado_Click" Height="30" Width="150" Margin="5">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Images/NEmpleado.png" Height="20"/>
+                <Label Content="Nuevo Empleado" Height="28" Width="120" HorizontalContentAlignment="Center"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="btmProducto" Click="btmProducto_Click" Height="30" Width="150" Margin="5">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Images/MANAGER.png" Height="20"/>
+                <Label Content="Nuevo Producto" Height="28" Width="120" HorizontalContentAlignment="Center"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="btmVenta" Click="btmVenta_Click" Height="30" Width="150" Margin="5">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Images/buy.png" Height="20"/>
+                <Label Content="Nueva Venta" Height="28" Width="120" HorizontalContentAlignment="Center"/>
+            </StackPanel>
+        </Button>
+        <StackPanel  Orientation="Horizontal">
+            <Button x:Name="btnRegresar" Click="btnRegresar_Click" Height="30" Width="85"  Background="#FFB7ECE7" BorderBrush="#FFA22020" Margin="10,10,30,0">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/Regresar.png" Width="25"/>
+                    <Label Content="Regresar" BorderBrush="#FF217D91" Height="27"/>
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="btnSalir" Click="btnSalir_Click" Height="30" Width="85" Background="#FF83BEF0" BorderBrush="#FFC7388A" Margin="50,10,10,0">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Salir" BorderBrush="#FF217D91"/>
+                    <Image Source="Images/rabit.png" Width="25"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+    </StackPanel>
+</Window>

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farmacia.DAL", "Farmacia.DAL\Farmacia.DAL.csproj", "{8660490D-F715-4315-90AA-1E06ADC0E844}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farmacia.COMMON", "Farmacia.COMMON\Farmacia.COMMON.csproj", "{66E7892C-099D-4C35-BDE4-B8495ACA7495}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farmacia.UI.WPF", "Farmacia.UI.WPF\Farmacia.UI.WPF.csproj", "{F8F92C55-5694-43B7-B607-EC2F53B97B32}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8660490D-F715-4315-90AA-1E06ADC0E844}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8660490D-F715-4315-90AA-1E06ADC0E844}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8660490D-F715-4315-90AA-1E06ADC0E844}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8660490D-F715-4315-90AA-1E06ADC0E844}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66E7892C-099D-4C35-BDE4-B8495ACA7495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66E7892C-099D-4C35-BDE4-B8495ACA7495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66E7892C-099D-4C35-BDE4-B8495ACA7495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66E7892C-099D-4C35-BDE4-B8495ACA7495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8F92C55-5694-43B7-B607-EC2F53B97B32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F92C55-5694-43B7-B607-EC2F53B97B32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F92C55-5694-43B7-B607-EC2F53B97B32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F92C55-5694-43B7-B607-EC2F53B97B32}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

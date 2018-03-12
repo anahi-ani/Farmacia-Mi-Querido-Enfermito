@@ -1,0 +1,34 @@
+﻿<Window x:Class="Farmacia.UI.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Farmacia.UI.WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="437.5" Width="329.737">
+    <StackPanel HorizontalAlignment="center">
+        <Image Source="Images/logo.png" Height="150"/>
+        <Label x:Name="lblUsuario" Content="Usuario" HorizontalContentAlignment="center" Margin="5"/>
+        <TextBox x:Name="txbusuario"></TextBox>
+        <Label x:Name="lblContraseña" Content="Contraseña" HorizontalContentAlignment="center" Margin="5"/>
+        <PasswordBox x:Name="pswbContrasenia"></PasswordBox>
+        <Label x:Name="lblPuesto" Content="Puesto" HorizontalContentAlignment="center" Margin="5"/>
+        <ComboBox x:Name="cmbPuesto"></ComboBox>
+        <StackPanel  Orientation="Horizontal">
+            <Button x:Name="btnSalir" Height="30" Width="85" Click="btnSalir_Click" Background="#FFB7ECE7" BorderBrush="#FFA22020" Margin="10,10,30,0">
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Salir" BorderBrush="#FF217D91"/>
+                        <Image Source="Images/rabit.png" Width="25"/>
+                    </StackPanel>
+                </Button>
+
+                <Button x:Name="btnEntrar" Height="30" Width="85" Click="btnEntrar_Click" Background="#FF83BEF0" BorderBrush="#FFC7388A" Margin="50,10,10,0">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Acceder" BorderBrush="#FF217D91"/>
+                    <Image Source="Images/aceptar.png" Width="25"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+    </StackPanel>
+
+</Window>
