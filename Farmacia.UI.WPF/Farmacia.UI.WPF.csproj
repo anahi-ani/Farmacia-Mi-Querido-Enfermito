@@ -158,7 +158,9 @@
   <ItemGroup>
     <Resource Include="if_game-theme_hospital_89099.ico" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\cancel.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\aceptar.png" />
     <Resource Include="Images\add.png" />

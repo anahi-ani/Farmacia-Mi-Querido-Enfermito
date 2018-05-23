@@ -16,24 +16,23 @@ namespace Farmacia.DAL
         string nombrearchivo;
         public TicketRepository( )
         {
-            nombrearchivo=DateTime.Now.ToString("dd.MM.yy[hh][mm][ss]");
+            nombrearchivo=DateTime.Now.ToString("dd-MM-yy hh_mm_ss");
             archivo= new ManejdorDeArchivos($"Ticket.{nombrearchivo}.txt");
             _ListTicket = new List<ProductoVendido>();
             _ticket = new Ticket();
         }
 
         //Create=Crear,Agregar,Insertar
-        public bool Crear(Ticket ticket)
+        public bool Crear(Ticket entidad)
         {
-            _ListTicket = ticket.ProductosVendidos;
-            _ticket.Empleado = ticket.Empleado;
-            _ticket.Cliente = ticket.Cliente;
-            _ticket.IVA = ticket.IVA;
-            _ticket.TotalVenta = ticket.TotalVenta;
-            _ticket.PagoEfectivo = ticket.PagoEfectivo;
-            _ticket.Cambio = ticket.Cambio;
+            _ListTicket = entidad.ProductosVendidos;
+            _ticket.Empleado = entidad.Empleado;
+            _ticket.Cliente = entidad.Cliente;
+            _ticket.IVA = entidad.IVA;
+            _ticket.TotalVenta = entidad.TotalVenta;
+            _ticket.PagoEfectivo = entidad.PagoEfectivo;
+            _ticket.Cambio = entidad.Cambio;
             bool _resultado = ActualizarArchivo();
-            //_ListTicket = LeerProductosVendidos();
             return _resultado;
         }
 
